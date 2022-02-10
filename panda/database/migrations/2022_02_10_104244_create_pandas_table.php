@@ -18,8 +18,8 @@ class CreatePandasTable extends Migration
             $table->string('name');
             $table->string('sex', 1);
             $table->date('birth');
-            $table->datetime('created_at');
-            $table->datetime('updated_at');
+            $table->datetime('created_at')->nullable();
+            $table->datetime('updated_at')->nullable();
         });
     }
 
